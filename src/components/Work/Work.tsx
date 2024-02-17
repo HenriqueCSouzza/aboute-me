@@ -53,7 +53,7 @@ function Work({ position, company, location, type, duration }: WorkType) {
           </div>
         </div>
         <p className="text-content text-xs md:text-sm font-light pl-1 min-w-fit">
-          {formatDate(duration.start, "us-BR")} -{" "}
+          {formatDate(duration.start, "pt-BR")} -{" "}
           {formatDate(duration.end, "pt-BR")}
         </p>
       </div>

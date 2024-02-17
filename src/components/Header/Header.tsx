@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import NavLink from "next/link";
-import Image from "next/image";
 import { socialMediaUrl } from "@/data/info";
 import React from "react";
 
@@ -52,14 +51,11 @@ function Header() {
   return (
     <header className="container mx-auto md:flex justify-between py-2 max-width">
       <div className="flex justify-between items-center py-2 md:py-10">
-        <NavLink href="/">
-          <Image
-            className="w-14"
-            src="/images/logo.svg"
-            alt="logo"
-            width="56"
-            height="35"
-          />
+        <NavLink
+          href="/"
+          className="text-lg bg-clip-text bg-gradient text-transparent md:text-lg xl:text-lg xl:leading-tight font-bold"
+        >
+          Henrique Souza
         </NavLink>
         <div onClick={toggleClass} className="cursor-pointer">
           <svg
