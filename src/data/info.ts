@@ -4,7 +4,7 @@ export const personalDetails = {
     "pt-BR": "Olá,👋 Meu nome é",
     "en-US": "Hi,👋 My Name is",
   },
-  name: "Henrique",
+  name: "Henrique Souza",
   tagline: {
     "pt-BR": "Eu crio aplicações web",
     "en-US": "I build web applications",

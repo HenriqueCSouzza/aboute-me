@@ -55,7 +55,7 @@ function Header() {
           href="/"
           className="text-lg bg-clip-text bg-gradient text-transparent md:text-lg xl:text-lg xl:leading-tight font-bold"
         >
-          Henrique Souza
+          {"{ HenriqueSouza }"}
         </NavLink>
         <div onClick={toggleClass} className="cursor-pointer">
           <svg
