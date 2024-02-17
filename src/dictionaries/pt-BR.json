@@ -1,0 +1,5 @@
+{
+  "name": "Henrique Souza",
+  "tagline": "Eu crio aplicações web",
+  "about": "Sou graduado em Análise e Desenvolvimento de Sistemas e atualmente trabalho como desenvolvedor frontend, especializado em arquitetura e desenvolvimento de aplicações web com foco na criação de soluções escaláveis. Minhas habilidades incluem a utilização de tecnologias como React, Next.js, Sass, Less, Styled-components, Emotion, Tailwind, Material UI e Ant Design. Possuo ampla experiência em integração de APIs, trabalhando tanto com GraphQL (Apollo/Hasura) quanto com REST, além de criar testes end-to-end utilizando Cypress e Playwright. Além disso, sou proficiente na criação de componentes React seguindo os princípios SOLID e garanto a padronização do código por meio de ferramentas como Eslint, Prettier e EditorConfig. Também desenvolvi APIs utilizando frameworks como Nest.js, Express, utilizando PostgreSQL/MongoDB, e implementei funções lambda utilizando JavaScript."
+}

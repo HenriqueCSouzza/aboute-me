@@ -1,0 +1,5 @@
+{
+  "name": "Henrique Souza",
+  "tagline": "I build web applications",
+  "about": "I hold a degree in Systems Analysis and Development and currently work as a frontend developer, specializing in web application architecture and development with a focus on creating scalable applications. My skills include utilizing technologies such as React, Next.js, Sass, Less, Styled-components, Emotion, Tailwind, Material UI, and Ant Design. I have extensive experience in API integration, working with both GraphQL (Apollo/Hasura) and REST, as well as in creating end-to-end tests using Cypress and Playwright.Furthermore, I am proficient in creating React components following SOLID principles and ensuring code standardization through tools like Eslint, Prettier, and EditorConfig. I have also developed APIs using frameworks such as Nest.js, Express, utilizing PostgreSQL/MongoDB, and implemented lambda functions using JavaScript."
+}
