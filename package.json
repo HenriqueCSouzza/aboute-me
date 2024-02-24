@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.4",
+    "@vercel/speed-insights": "^1.0.10",
     "gsap": "^3.12.5",
     "i18next": "^23.8.2",
     "negotiator": "^0.6.3",
