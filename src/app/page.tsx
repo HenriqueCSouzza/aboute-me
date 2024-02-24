@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { personalDetails } from "@/data/info";
-import GenericElement from "@/components/GenericElement";
+import Title from "@/components/design/ui/Title";
 
 type LangType = "en-US" | "pt-BR";
 interface HomePageType {
@@ -10,26 +10,25 @@ interface HomePageType {
 }
 
 export default async function HomePage({ params }: HomePageType) {
-  const { presentation, name, tagline } = personalDetails;
+  const { presentation, name, tagline, job, phraseJob } = personalDetails;
   const lang = params?.lang || "pt-BR";
   return (
-    <main className="container mx-auto max-width section md:flex justify-between items-center xl:text-center">
+    <main className="container mx-auto max-width section sm:flex-col-reverse sm:gap-12 md:flex-row flex justify-between items-center">
       <div className="">
-        <GenericElement
-          tag="h1"
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold xl:text-center"
-        >
-          {presentation[lang]}
-        </GenericElement>
-
-        <h1 className="text-2xl bg-clip-text bg-gradient text-transparent md:text-4xl xl:text-5xl xl:leading-tight font-bold">
-          {name}
-        </h1>
-        <h2 className="text-xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+        <Title size="h4" tag="h1">
+          {presentation[lang] + " " + name[lang]}
+        </Title>
+        <Title size="h4" tag="h1">
+          {phraseJob[lang]}{" "}
+          <span className="bg-clip-text bg-gradient text-transparent">
+            {job[lang]}
+          </span>
+        </Title>
+        <Title size="h4" tag="h2">
           {tagline[lang]}
-        </h2>
+        </Title>
       </div>
-      <div className="mt-5 md:mt-0 flex justify-center items-center">
+      <div className="flex justify-center items-center">
         <Image
           className="w-1/2 md:ml-auto rounded-full"
           src="/images/profile.jpg"

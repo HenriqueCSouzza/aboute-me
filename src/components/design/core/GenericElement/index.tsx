@@ -5,6 +5,7 @@ interface GenericElementProps<T extends keyof JSX.IntrinsicElements> {
   className?: string;
   children: ReactNode;
   elementProps?: JSX.IntrinsicElements[T];
+  testId?: string;
 }
 
 const GenericElement: FC<GenericElementProps<keyof JSX.IntrinsicElements>> = ({
@@ -12,8 +13,13 @@ const GenericElement: FC<GenericElementProps<keyof JSX.IntrinsicElements>> = ({
   className,
   children,
   elementProps,
+  testId,
 }) => {
-  return createElement(tag, { className, ...elementProps }, children);
+  return createElement(
+    tag,
+    { className, "data-testid": testId, ...elementProps },
+    children
+  );
 };
 
 export default GenericElement;

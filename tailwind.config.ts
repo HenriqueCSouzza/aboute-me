@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
+const { withTV } = require("tailwind-variants/transformer");
 
-const config: Config = {
-  darkMode: ["class", '[data-mode="dark"]'],
+const config: Config = withTV({
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -25,5 +25,5 @@ const config: Config = {
     },
   },
   plugins: [],
-};
+});
 export default config;

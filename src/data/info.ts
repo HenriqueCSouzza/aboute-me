@@ -1,10 +1,21 @@
 // Enter your Personal Details here
 export const personalDetails = {
   presentation: {
-    "pt-BR": "Olá,👋 Meu nome é",
-    "en-US": "Hi,👋 My Name is",
+    "pt-BR": "Olá 👋,",
+    "en-US": "Hi 👋,",
   },
-  name: "Henrique Souza",
+  name: {
+    "pt-BR": "Eu sou o Henrique!",
+    "en-US": "I'm Henrique!",
+  },
+  phraseJob: {
+    "pt-BR": "Um ",
+    "en-US": "A ",
+  },
+  job: {
+    "pt-BR": "Desenvolvedor Frontend",
+    "en-US": "Frontend Developer",
+  },
   tagline: {
     "pt-BR": "Eu crio aplicações web",
     "en-US": "I build web applications",
