@@ -7,7 +7,7 @@ interface TextProps<T extends keyof JSX.IntrinsicElements> {
   elementProps?: JSX.IntrinsicElements[T];
 }
 
-export default function TextText<T extends keyof JSX.IntrinsicElements>({
+export default function Text<T extends keyof JSX.IntrinsicElements>({
   children,
   className,
   elementProps,
