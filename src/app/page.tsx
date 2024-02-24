@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { personalDetails } from "@/data/info";
-import Title from "@/components/design/ui/Title";
+import Title from "@/components/design/Title";
 
 type LangType = "en-US" | "pt-BR";
 interface HomePageType {

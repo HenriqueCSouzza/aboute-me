@@ -53,7 +53,7 @@ function Header() {
       <div className="flex justify-between items-center py-2 md:py-10">
         <NavLink
           href="/"
-          className="text-lg bg-clip-text text-black dark:text-light-content text-transparent md:text-lg xl:text-lg xl:leading-tight font-bold"
+          className="text-lg text-black dark:text-light-content md:text-lg xl:text-lg xl:leading-tight font-bold"
         >
           Henrique Souza
         </NavLink>
