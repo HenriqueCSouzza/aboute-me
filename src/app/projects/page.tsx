@@ -24,7 +24,7 @@ export default function ProjectsPage() {
                   title={title}
                   image={image}
                   description={description}
-                  techstack={techstack}
+                  stack={techstack}
                   previewLink={previewLink}
                   githubLink={githubLink}
                 />

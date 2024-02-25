@@ -3,13 +3,13 @@ import { tv, VariantProps } from "tailwind-variants";
 import GenericElement from "@/components/design/core/GenericElement";
 
 const textTV = tv({
-  base: "font-bold",
+  base: "",
   variants: {
     color: {
       primary: "text-dark-heading dark:text-light-heading",
       gradient: "bg-clip-text bg-gradient text-transparent",
-      "text-gradient": "text-gradient",
       contrast: "dark:text-dark-heading text-light-content",
+      textContent: "text-content",
     },
     size: {
       xs: "text-xs",
@@ -22,7 +22,7 @@ const textTV = tv({
   },
   defaultVariants: {
     size: "base",
-    color: "primary",
+    color: "textContent",
   },
 });
 

@@ -34,13 +34,13 @@ export default async function HomePage({ params }: HomePageType) {
           </Title>
         </div>
         <div className="flex justify-center items-center ">
-          <Image
-            className="w-1/2 md:ml-auto rounded-full"
-            src="/images/profile.jpg"
-            width="350"
-            height="350"
-            alt="Henrique Souza"
-          />
+          <picture className="w-1/2 sm:w-1/3 md:ml-auto ">
+            <img
+              src="/images/profile.jpg"
+              alt="Henrique Souza"
+              className="rounded-full"
+            />
+          </picture>
         </div>
       </section>
     </main>

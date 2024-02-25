@@ -5,7 +5,7 @@ interface ProjectType extends ComponentProps<"article"> {
   title: string;
   image: string;
   description: string;
-  techstack: string;
+  stack: string;
   previewLink: string;
   githubLink: string;
 }
@@ -14,26 +14,22 @@ function Project({
   title,
   image,
   description,
-  techstack,
+  stack,
   previewLink,
   githubLink,
 }: ProjectType) {
   return (
     <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900">
-      <NextImage
-        src={image}
-        alt={title}
-        loading="lazy"
-        width="344"
-        height="230"
-      />
+      <picture>
+        <img src={image} alt={title} loading="lazy" />
+      </picture>
       <div className="dark:bg-dark-card p-4">
         <h1 className="dark:text-light-heading font-semibold text-lg pt-1">
           {title}
         </h1>
         <p className="text-content pt-4 font-light">{description}</p>
         <h3 className="text-dark-heading dark:text-light-heading font-medium pt-4">
-          Tech Stack : <span className="font-light">{techstack}</span>
+          Tech Stack : <span className="font-light">{stack}</span>
         </h3>
         <div className="flex justify-between items-center mt-5">
           <div className="flex items-center">

@@ -2,6 +2,8 @@ import React from "react";
 import Work from "@/components/Work";
 import { personalDetails } from "@/data/info";
 import workDetails from "@/data/workDetails";
+import Title from "@/components/design/Title";
+import Text from "@/components/design/Text";
 
 type LangType = "en-US" | "pt-BR";
 
@@ -16,24 +18,23 @@ export default async function AboutPage({ params }: PageType) {
   return (
     <main className="container mx-auto max-width pt-10 pb-20 ">
       <section>
-        <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold ">
-          {lang === "en-US" ? "About Me" : "Sobre mim"}
-        </h1>
+        <Title tag="h1">{lang === "en-US" ? "About Me" : "Sobre mim"}</Title>
 
         <div className="mt-5">
-          <p className="text-content lg:max-w-3xl">
+          <Text color="textContent">
             {personalDetails.about[lang].paragraph1}
-          </p>
+          </Text>
           <br />
-          <p className="text-content lg:max-w-3xl">
+          <Text color="textContent">
             {personalDetails.about[lang].paragraph2}
-          </p>
+          </Text>
         </div>
       </section>
-      <section>
-        <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+      <section className="mt-9">
+        <Title tag="h1">
           {lang === "en-US" ? "Work Experience" : "Experiências"}
-        </h1>
+        </Title>
+
         {React.Children.toArray(
           workDetails.map(({ Position, Company, Location, Type, Duration }) => (
             <Work

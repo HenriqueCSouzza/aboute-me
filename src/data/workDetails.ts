@@ -2,7 +2,7 @@ export const workDetails = [
   {
     Position: {
       "en-US": "Frontend Developer",
-      "pt-BR": "Frontend Developer",
+      "pt-BR": "Desenvolvedor Frontend Sênior",
     },
     Company: `Livar`,
     Location: "São Paulo, Brasil · Remote",
@@ -27,8 +27,8 @@ export const workDetails = [
   },
   {
     Position: {
-      "en-US": "Full Stack Developer",
-      "pt-BR": "Full Stack Developer",
+      "en-US": "Full Stack Developer | Frontend",
+      "pt-BR": "Desenvolvedor Full Stack | Frontend",
     },
     Company: `Zaga`,
     Location: "São Paulo, Brasil · Remote",
@@ -59,7 +59,7 @@ export const workDetails = [
   {
     Position: {
       "en-US": "Frontend Developer",
-      "pt-BR": "Frontend Developer",
+      "pt-BR": "Desenvolvedor Frontend",
     },
     Company: `TECWARE Consultoria`,
     Location: "São Paulo, Brasil",
