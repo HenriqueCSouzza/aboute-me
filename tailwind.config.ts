@@ -21,6 +21,7 @@ const config: Config = withTV({
         "dark-card": "#363636",
         "green-text": "#018C0F",
         greenbg: "#D7FFE0",
+        footer: "rgb(30, 30, 30)",
       },
     },
   },

@@ -3,10 +3,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 export default function TemplateApp({ children }: { children: ReactNode }) {
   return (
-    <>
+    <div className="flex flex-col justify-between h-screen">
       <Header />
       {children}
       <Footer />
-    </>
+    </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Work from "@/components/Work";
-import { personalDetails, workDetails } from "@/data/info";
+import { personalDetails } from "@/data/info";
+import workDetails from "@/data/workDetails";
 
 type LangType = "en-US" | "pt-BR";
 
@@ -15,12 +16,19 @@ export default async function AboutPage({ params }: PageType) {
   return (
     <main className="container mx-auto max-width pt-10 pb-20 ">
       <section>
-        <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+        <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold ">
           {lang === "en-US" ? "About Me" : "Sobre mim"}
         </h1>
-        <p className="text-content py-8 lg:max-w-3xl">
-          {personalDetails.about[lang]}
-        </p>
+
+        <div className="mt-5">
+          <p className="text-content lg:max-w-3xl">
+            {personalDetails.about[lang].paragraph1}
+          </p>
+          <br />
+          <p className="text-content lg:max-w-3xl">
+            {personalDetails.about[lang].paragraph2}
+          </p>
+        </div>
       </section>
       <section>
         <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">

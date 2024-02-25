@@ -1,23 +1,52 @@
-import { ReactNode } from "react";
+import { ComponentProps, ReactNode } from "react";
+import { tv, VariantProps } from "tailwind-variants";
 import GenericElement from "@/components/design/core/GenericElement";
 
-interface TextProps<T extends keyof JSX.IntrinsicElements> {
-  className?: string;
-  children: ReactNode;
-  elementProps?: JSX.IntrinsicElements[T];
-  testId?: string;
-}
+const textTV = tv({
+  base: "font-bold",
+  variants: {
+    color: {
+      primary: "text-dark-heading dark:text-light-heading",
+      gradient: "bg-clip-text bg-gradient text-transparent",
+      "text-gradient": "text-gradient",
+      contrast: "dark:text-dark-heading text-light-content",
+    },
+    size: {
+      xs: "text-xs",
+      sm: "text-sm",
+      base: "text-base",
+      md: "text-md",
+      lg: "text-lg",
+      xl: "text-xl",
+    },
+  },
+  defaultVariants: {
+    size: "base",
+    color: "primary",
+  },
+});
+
+export type TextProps<T extends keyof JSX.IntrinsicElements> =
+  ComponentProps<"p"> &
+    VariantProps<typeof textTV> & {
+      className?: string;
+      children: ReactNode;
+      elementProps?: JSX.IntrinsicElements[T];
+      testId?: string;
+    };
 
 export default function Text<T extends keyof JSX.IntrinsicElements>({
   children,
   className,
   elementProps,
   testId,
+  size,
+  color,
 }: TextProps<T>) {
   return (
     <GenericElement
       tag="p"
-      className={className}
+      className={textTV({ size, color, className })}
       elementProps={elementProps}
       testId={testId}
     >
