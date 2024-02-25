@@ -13,7 +13,7 @@ export default async function HomePage({ params }: HomePageType) {
   const { presentation, name, tagline, job, phraseJob } = personalDetails;
   const lang = params?.lang || "pt-BR";
   return (
-    <main className="container mx-auto max-width section sm:flex-col-reverse sm:gap-12 md:flex-row flex justify-between items-center">
+    <main className="container mx-auto max-width section flex-col-reverse gap-12 md:flex-row flex justify-between items-center">
       <div className="">
         <Title size="h4" tag="h1">
           {presentation[lang] + " " + name[lang]}
@@ -28,9 +28,9 @@ export default async function HomePage({ params }: HomePageType) {
           {tagline[lang]}
         </Title>
       </div>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center ">
         <Image
-          className="w-1/2 md:ml-auto rounded-full"
+          className="w-1/2 md:ml-auto rounded-3xl"
           src="/images/profile.jpg"
           width="350"
           height="350"

@@ -8,7 +8,7 @@ interface TextProps<T extends keyof JSX.IntrinsicElements> {
   children: ReactNode;
   elementProps?: JSX.IntrinsicElements[T];
   size?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-  color?: "primary" | "gradient";
+  color?: "primary" | "gradient" | "text-gradient";
   testId?: string;
 }
 
@@ -21,11 +21,12 @@ export default function Title<T extends keyof JSX.IntrinsicElements>({
   testId,
 }: TextProps<T>) {
   const titleTV = tv({
-    base: "text-dark-heading dark:text-light-heading font-bold",
+    base: "font-bold",
     variants: {
       color: {
         primary: "text-dark-heading dark:text-light-heading",
         gradient: "bg-clip-text bg-gradient text-transparent",
+        "text-gradient": "text-gradient",
       },
       size: {
         h1: "text-5xl",
