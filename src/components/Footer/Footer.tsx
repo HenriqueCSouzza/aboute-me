@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="w-full mx-auto py-10 bg-footer dark:bg-gray-300 ">
       <div className="container max-width flex flex-col sm:flex-row sm:justify-between gap-4 ">
         <div>
-          <Text color="gradient">Nice to see you here!</Text>
+          <Text color="gradient">Legal te ver aqui!</Text>
           <Text size="sm" color="contrast" className="mt-4">
             <a href={`mailto:${email}`}>{email}</a>
           </Text>

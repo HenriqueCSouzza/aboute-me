@@ -36,13 +36,8 @@ export const personalDetails = {
   },
 };
 
-// Enter your Social Media URLs here
 export const socialMediaUrl = {
   linkedin: "https://www.linkedin.com/in/henrique-souza-19a33aa9/",
   github: "https://github.com/HenriqueCSouzza",
   twitter: "https://twitter.com/henriquecsouza",
 };
-
-// Enter your Work Experience here
-
-// Enter your Project Details here
