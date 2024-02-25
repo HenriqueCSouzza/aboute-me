@@ -16,6 +16,8 @@ function Project({
   previewLink,
   githubLink,
 }: ProjectProps) {
+  const checkLinks = previewLink || githubLink ? true : false;
+
   return (
     <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900">
       <picture className="">
@@ -47,31 +49,35 @@ function Project({
             )}
           </span>
         </div>
-        <div className="flex justify-between items-center mt-5">
-          <div className="flex items-center">
-            <FaLink className="text-dark-heading dark:text-white text-xl" />
 
-            <a
-              href={previewLink}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="underline pl-2 font-light dark:text-white"
-            >
-              Live Preview
-            </a>
-          </div>
-          <div className="flex items-center">
-            <FaGithub className="text-dark-heading dark:text-white text-xl" />
+        <div className="flex justify-between items-center mt-5 min-h-6">
+          {previewLink && (
+            <div className="flex items-center">
+              <FaLink className="text-dark-heading dark:text-white text-xl" />
+              <a
+                href={previewLink}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="underline pl-2 font-light dark:text-white"
+              >
+                Live Preview
+              </a>
+            </div>
+          )}
+          {githubLink && (
+            <div className="flex items-center">
+              <FaGithub className="text-dark-heading dark:text-white text-xl" />
 
-            <a
-              href={githubLink}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="underline pl-2 font-light dark:text-white"
-            >
-              View Code
-            </a>
-          </div>
+              <a
+                href={githubLink}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="underline pl-2 font-light dark:text-white"
+              >
+                View Code
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </article>
