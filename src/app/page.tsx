@@ -1,9 +1,6 @@
-import Image from "next/image";
 import { personalDetails } from "@/data/info";
-import workDetails from "@/data/workDetails";
 import Title from "@/components/design/Title";
 import React from "react";
-import Work from "@/components/Work";
 
 type LangType = "en-US" | "pt-BR";
 interface HomePageType {

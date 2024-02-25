@@ -1,19 +1,38 @@
-export const projectDetails = [
+import { ChipVariantProps } from "@/components/design/Chip";
+
+export type Tech = { label: string; color: ChipVariantProps["color"] };
+export type ProjectType = {
+  title: string;
+  image: string;
+  description: string;
+  technologies: Tech[];
+  previewLink: string;
+  githubLink: string;
+};
+export type ProjectDetails = ProjectType[];
+
+export const projectDetails: ProjectDetails = [
   {
-    title: "Project title 1",
-    image: "/images/projects/project1.jpg",
+    title: "Weather App",
+    image: "/images/projects/weatherapp.webp",
     description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    technologies: [
+      { label: "React", color: "blue" },
+      { label: "MaterialUi", color: "rose" },
+    ],
+    previewLink: "https://weather-app-022.netlify.app/",
+    githubLink: "https://github.com/HenriqueCSouzza/weather-app",
   },
   {
-    title: "Project title 2",
-    image: "/images/projects/project2.jpg",
+    title: "My movie TMDB",
+    image: "/images/projects/meymovietmdb.webp",
     description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    technologies: [
+      { label: "React", color: "blue" },
+      { label: "MaterialUi", color: "blue" },
+    ],
     previewLink: "https://google.com",
     githubLink: "https://github.com",
   },
@@ -22,7 +41,10 @@ project lorem ipsum generator for dummy content`,
     image: "/images/projects/project3.jpg",
     description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    technologies: [
+      { label: "React", color: "blue" },
+      { label: "MaterialUi", color: "blue" },
+    ],
     previewLink: "https://google.com",
     githubLink: "https://github.com",
   },
@@ -31,7 +53,10 @@ project lorem ipsum generator for dummy content`,
     image: "/images/projects/project4.jpg",
     description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    technologies: [
+      { label: "React", color: "blue" },
+      { label: "MaterialUi", color: "blue" },
+    ],
     previewLink: "https://google.com",
     githubLink: "https://github.com",
   },
@@ -40,7 +65,10 @@ project lorem ipsum generator for dummy content`,
     image: "/images/projects/project5.jpg",
     description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    technologies: [
+      { label: "React", color: "blue" },
+      { label: "MaterialUi", color: "blue" },
+    ],
     previewLink: "https://google.com",
     githubLink: "https://github.com",
   },
@@ -49,7 +77,10 @@ project lorem ipsum generator for dummy content`,
     image: "/images/projects/project6.jpg",
     description: `This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    technologies: [
+      { label: "React", color: "blue" },
+      { label: "MaterialUi", color: "blue" },
+    ],
     previewLink: "https://google.com",
     githubLink: "https://github.com",
   },
