@@ -76,8 +76,8 @@ export const projectDetails: ProjectDetails = [
       { label: "RestApi", color: "purple" },
       { label: "Vite", color: "emerald" },
     ],
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    previewLink: "https://mymovietmdb.netlify.app",
+    githubLink: "https://github.com/HenriqueCSouzza/my-movie",
   },
   {
     title: "Solid React",
@@ -87,7 +87,7 @@ export const projectDetails: ProjectDetails = [
       { label: "React", color: "blue" },
       { label: "Vite", color: "emerald" },
     ],
-    previewLink: "https://solidreactjs.netlify.app/users",
+    previewLink: "https://solidreactjs.netlify.app",
     githubLink: "https://github.com/HenriqueCSouzza/solid-react",
   },
 ];

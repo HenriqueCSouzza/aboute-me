@@ -17,7 +17,7 @@ function Project({
   githubLink,
 }: ProjectProps) {
   return (
-    <article className="dark:bg-dark-card  border border-transparent rounded-xl">
+    <article className="shadow-xl shadow-slate-300 dark:shadow-slate-900 dark:bg-dark-card  border dark:border-transparent rounded-xl">
       <picture>
         <img
           src={image}
