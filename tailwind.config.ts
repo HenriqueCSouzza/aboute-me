@@ -9,6 +9,9 @@ const config: Config = withTV({
   ],
   theme: {
     extend: {
+      height: {
+        "h-card": "458px",
+      },
       fontFamily: {
         primary: "Poppins, sans-serif",
       },

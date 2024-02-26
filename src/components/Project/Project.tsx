@@ -16,10 +16,8 @@ function Project({
   previewLink,
   githubLink,
 }: ProjectProps) {
-  const checkLinks = previewLink || githubLink ? true : false;
-
   return (
-    <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900">
+    <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900 h-card">
       <picture className="">
         <img
           src={image}
