@@ -18,12 +18,12 @@ function Project({
 }: ProjectProps) {
   return (
     <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900 h-card">
-      <picture className="">
+      <picture>
         <img
           src={image}
           alt={title}
           loading="lazy"
-          className="w-full h-full bg-no-repeat bg-contain max-h-64 md:max-h-44"
+          className="w-full h-full bg-no-repeat bg-contain max-h-48 md:max-h-44"
         />
       </picture>
       <div className="dark:bg-dark-card p-4">
