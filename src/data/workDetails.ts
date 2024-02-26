@@ -1,5 +1,6 @@
 export const workDetails = [
   {
+    id: 1,
     Position: {
       "en-US": "Frontend Developer",
       "pt-BR": "Desenvolvedor Frontend Sênior",
@@ -26,6 +27,7 @@ export const workDetails = [
     },
   },
   {
+    id: 2,
     Position: {
       "en-US": "Full Stack Developer | Frontend",
       "pt-BR": "Desenvolvedor Full Stack | Frontend",
@@ -57,6 +59,7 @@ export const workDetails = [
     },
   },
   {
+    id: 3,
     Position: {
       "en-US": "Frontend Developer",
       "pt-BR": "Desenvolvedor Frontend",
@@ -71,6 +74,7 @@ export const workDetails = [
     },
   },
   {
+    id: 4,
     Position: {
       "en-US": "Automated Testing Technician",
       "pt-BR": "Técnico de automação",
@@ -85,6 +89,7 @@ export const workDetails = [
     },
   },
   {
+    id: 5,
     Position: {
       "en-US": "Web Developer",
       "pt-BR": "Desenvolvedor web",

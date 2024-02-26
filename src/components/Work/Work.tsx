@@ -8,9 +8,19 @@ interface WorkType extends ComponentProps<"article"> {
   duration: { start: string; end: string };
 }
 
-function Work({ position, company, location, type, duration }: WorkType) {
+function Work({
+  position,
+  company,
+  location,
+  type,
+  duration,
+  onClick,
+}: WorkType) {
   return (
-    <article className="pt-8 border-b-2 border-dark-content pb-5 dark:border-light-content border-opacity-20 dark:border-opacity-20">
+    <article
+      className="pt-8 border-b-2 border-dark-content pb-5 dark:border-light-content border-opacity-20 dark:border-opacity-20"
+      onClick={onClick}
+    >
       <div className="flex justify-between items-center">
         <h1 className="text-content md:text-lg lg:text-xl">{position}</h1>
         <div className="btn bg-greenbg text-green-text text-xs inline-block rounded-3xl px-3 py-1 min-w-fit">
