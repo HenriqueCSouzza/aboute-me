@@ -8,7 +8,7 @@ export default function ProjectsPage() {
     <main className="container mx-auto max-width pt-10 mb-20">
       <section>
         <Title tag="h1">Projetos</Title>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
           {React.Children.toArray(
             projectDetails.map(
               ({

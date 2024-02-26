@@ -15,32 +15,52 @@ export const projectDetails: ProjectDetails = [
   {
     title: "Catálogo - Livar",
     image: "/images/projects/catalog-livar.webp",
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+    description: `Plataforma digital de vendas de imóveis`,
     technologies: [
       { label: "Next", color: "sky" },
       { label: "MaterialUi", color: "blue" },
+      { label: "Graphql", color: "rose" },
     ],
   },
   {
     title: "Livia - Livar",
     image: "/images/projects/livia-livar.webp",
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+    description: `App de sugestão de imóveis para clientes`,
     technologies: [
       { label: "React", color: "blue" },
       { label: "MaterialUi", color: "blue" },
       { label: "Vite", color: "emerald" },
+      { label: "Graphql", color: "rose" },
+    ],
+  },
+  {
+    title: "Saas - Zaga",
+    image: "/images/projects/saas-zaga.webp",
+    description: `Plataforma que possibilita ter controle de estoque, logistica, estapas de entrega e etc...`,
+    technologies: [
+      { label: "React", color: "blue" },
+      { label: "MaterialUi", color: "blue" },
+      { label: "Graphql", color: "rose" },
+    ],
+  },
+  {
+    title: "Comparador de Preços - Zaga",
+    image: "/images/projects/comparador-precos-zaga.webp",
+    description: `Aplicação que permite comparar preços de produtos do setor hospitalar`,
+    technologies: [
+      { label: "React", color: "blue" },
+      { label: "MaterialUi", color: "blue" },
+      { label: "RestApi", color: "purple" },
     ],
   },
   {
     title: "Weather App",
     image: "/images/projects/weatherapp.webp",
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+    description: `Aplicativo de clima`,
     technologies: [
       { label: "React", color: "blue" },
       { label: "MaterialUi", color: "rose" },
+      { label: "RestApi", color: "purple" },
       { label: "Vite", color: "emerald" },
     ],
     previewLink: "https://weather-app-022.netlify.app/",
@@ -49,11 +69,11 @@ project lorem ipsum generator for dummy content`,
   {
     title: "My Movie TMDB",
     image: "/images/projects/meymovietmdb.webp",
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+    description: `Aplicativo de listagem de filmes,series e etc...`,
     technologies: [
       { label: "React", color: "blue" },
       { label: "Tailwind", color: "cyan" },
+      { label: "RestApi", color: "purple" },
       { label: "Vite", color: "emerald" },
     ],
     previewLink: "https://google.com",
@@ -62,25 +82,13 @@ project lorem ipsum generator for dummy content`,
   {
     title: "Solid React",
     image: "/images/projects/solidreactjs.webp",
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+    description: `Aplicação criada para mostrar como funciona o Solid no React`,
     technologies: [
       { label: "React", color: "blue" },
       { label: "Vite", color: "emerald" },
     ],
     previewLink: "https://solidreactjs.netlify.app/users",
     githubLink: "https://github.com/HenriqueCSouzza/solid-react",
-  },
-
-  {
-    title: "Project title 6",
-    image: "/images/projects/project6.jpg",
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    technologies: [
-      { label: "React", color: "blue" },
-      { label: "MaterialUi", color: "blue" },
-    ],
   },
 ];
 

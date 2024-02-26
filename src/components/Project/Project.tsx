@@ -17,20 +17,20 @@ function Project({
   githubLink,
 }: ProjectProps) {
   return (
-    <article className="rounded-xl mt-10 overflow-hidden shadow-xl shadow-slate-300 dark:shadow-slate-900 h-card">
+    <article className="dark:bg-dark-card  border border-transparent rounded-xl">
       <picture>
         <img
           src={image}
           alt={title}
           loading="lazy"
-          className="w-full h-full bg-no-repeat bg-contain max-h-48 md:max-h-44"
+          className="w-full h-full bg-no-repeat rounded-t-xl bg-contain max-h-48 md:max-h-44"
         />
       </picture>
-      <div className="dark:bg-dark-card p-4">
+      <div className="p-4">
         <Title tag="h1" size="h6" className="">
           {title}
         </Title>
-        <Text className="pt-4">{description}</Text>
+        <Text className="pt-4 h-20">{description}</Text>
         <div className="pt-4">
           <Text className="font-bold"> TechStack</Text>
           <span className="flex gap-1 flex-wrap">
