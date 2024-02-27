@@ -58,7 +58,7 @@ export default function AboutPage({ params }: PageType) {
                 duration={Duration}
                 onClick={() => {
                   setWorkId(id);
-                  handleOpenDialog();
+                  // handleOpenDialog();
                 }}
               />
             )
