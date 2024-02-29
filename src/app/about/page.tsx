@@ -10,14 +10,14 @@ import Dialog from "@/components/design/Dialog";
 type LangType = "en-US" | "pt-BR";
 
 interface PageType {
-  params: {
+  searchParams: {
     lang?: LangType;
   };
 }
 
-export default function AboutPage({ params }: PageType) {
-  const lang = params?.lang || "pt-BR";
-
+export default function AboutPage({ searchParams }: PageType) {
+  const lang = searchParams?.lang || "pt-BR";
+  console.log(searchParams);
   const [isOpen, setIsOpen] = useState(false);
   const [workId, setWorkId] = useState<number | null>(null);
   const handleOpenDialog = () => {
@@ -65,11 +65,6 @@ export default function AboutPage({ params }: PageType) {
           )
         )}
       </section>
-      <Dialog.Root isOpen={isOpen} onClose={handleCloseDialog}>
-        <Dialog.Header>Header</Dialog.Header>
-        <Dialog.Content>Content</Dialog.Content>
-        <Dialog.Footer>Footer</Dialog.Footer>
-      </Dialog.Root>
     </main>
   );
 }
