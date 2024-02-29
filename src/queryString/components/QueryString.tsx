@@ -1,6 +1,6 @@
 "use client";
 import QueryStringRouter from "./QueryStringRouter";
-import WorkDialog from "../dialogs/WorkDialog";
+import WorkDialog from "../../components/WorkDialog";
 
 export type QueryStringType = {
   component: (props: any) => JSX.Element;
