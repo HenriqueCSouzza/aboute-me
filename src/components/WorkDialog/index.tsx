@@ -1,3 +1,1 @@
-export default function WorkDialog() {
-  return <></>;
-}
+export { default } from "./WorkDialog";
