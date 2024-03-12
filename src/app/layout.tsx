@@ -10,14 +10,18 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Henrique Souza",
-  description: "Frontend web developer",
-  authors: [],
+  title: "Henrique Souza - Frontend Developer",
+  description:
+    "I hold a degree in Systems Analysis and Development and currently work as a frontend developer, specializing in web application architecture and development with a focus on creating scalable applications. My skills include utilizing technologies such as React, Next.js, Sass, Less, Styled-components, Emotion, Tailwind, Material UI, and Ant Design. I have extensive experience in API integration, working with both GraphQL (Apollo/Hasura) and REST, as well as in creating end-to-end tests using Cypress and Playwright.",
   keywords:
-    "frontend senior, frontend software engineer, web developer, technology, development",
-  robots: "*",
-  creator: "Henrique Souza",
-  category: "Technology",
+    "Henrique,Souza,Frontend,Developer,developer,software,engineer,web,mobile,fullstack,frontend,react,cypress,jest,typescript,javascript,node,next,storybook",
+  robots: "index, follow",
+  creator: "https://github.com/HenriqueCSouzza/about-me",
+  openGraph: {
+    title: "Henrique Souza - Frontend Developer",
+    description:
+      "I hold a degree in Systems Analysis and Development and currently work as a frontend developer, specializing in web application architecture and development with a focus on creating scalable applications. My skills include utilizing technologies such as React, Next.js, Sass, Less, Styled-components, Emotion, Tailwind, Material UI, and Ant Design. I have extensive experience in API integration, working with both GraphQL (Apollo/Hasura) and REST, as well as in creating end-to-end tests using Cypress and Playwright.",
+  },
 };
 
 export async function generateStaticParams() {
