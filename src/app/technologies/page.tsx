@@ -3,12 +3,12 @@ import NextImage from "next/image";
 type LangType = "en-US" | "pt-BR";
 
 interface PageType {
-  params: {
+  searchParams: {
     lang?: LangType;
   };
 }
 
-export default async function TechnologiesPage({ params }: PageType) {
+export default async function TechnologiesPage({ searchParams }: PageType) {
   return (
     <main className="container mx-auto max-width pt-10 pb-20 ">
       <section>

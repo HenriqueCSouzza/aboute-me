@@ -3,16 +3,15 @@ import Title from "@/components/design/Title";
 import React from "react";
 
 type LangType = "en-US" | "pt-BR";
-interface HomePageType {
-  params: {
+interface AboutPageType {
+  searchParams: {
     lang?: LangType;
   };
 }
 
-export default async function HomePage({ params }: HomePageType) {
+export default async function AboutPage({ searchParams }: AboutPageType) {
   const { presentation, name, tagline, job, phraseJob } = personalDetails;
-
-  const lang = params?.lang || "pt-BR";
+  const lang = searchParams?.lang || "pt-BR";
   return (
     <main className="container mx-auto max-width">
       <section className="text-center md:text-left flex-col-reverse gap-16 md:gap-6 md:flex-row flex justify-between items-center">

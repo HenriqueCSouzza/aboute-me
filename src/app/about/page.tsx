@@ -6,20 +6,21 @@ import workDetails from "@/data/workDetails";
 import Title from "@/components/design/Title";
 import Text from "@/components/design/Text";
 import Dialog from "@/components/design/Dialog";
+import WorkDialog from "@/components/WorkDialog";
 
 type LangType = "en-US" | "pt-BR";
 
 interface PageType {
-  params: {
+  searchParams: {
     lang?: LangType;
   };
 }
 
-export default function AboutPage({ params }: PageType) {
-  const lang = params?.lang || "pt-BR";
+export default function AboutPage({ searchParams }: PageType) {
+  const lang = searchParams?.lang || "pt-BR";
 
   const [isOpen, setIsOpen] = useState(false);
-  const [workId, setWorkId] = useState<number | null>(null);
+  const [workId, setWorkId] = useState<number>();
   const handleOpenDialog = () => {
     setIsOpen(true);
   };
@@ -58,7 +59,7 @@ export default function AboutPage({ params }: PageType) {
                 duration={Duration}
                 onClick={() => {
                   setWorkId(id);
-                  // handleOpenDialog();
+                  handleOpenDialog();
                 }}
               />
             )
@@ -66,9 +67,7 @@ export default function AboutPage({ params }: PageType) {
         )}
       </section>
       <Dialog.Root isOpen={isOpen} onClose={handleCloseDialog}>
-        <Dialog.Header>Header</Dialog.Header>
-        <Dialog.Content>Content</Dialog.Content>
-        <Dialog.Footer>Footer</Dialog.Footer>
+        <WorkDialog id={workId} lang={lang} />
       </Dialog.Root>
     </main>
   );

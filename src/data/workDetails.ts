@@ -23,7 +23,17 @@ export const workDetails = [
         Backoffice: System built with React (JavaScript), following SOLID principles in component construction, Material UI, and GraphQL.
         LivarUI: Company's component library.
       `,
-      "pt-BR": ``,
+      "pt-BR": `Criar e padronizar a arquitetura de vários projetos web.
+      Criar e dividir tarefas no Asana, especificando o que cada tarefa exigirá para o desenvolvimento.
+      Realizar revisões de código após solicitações de pull serem abertas.
+      Participar de sessões de codificação em par quando um colega precisar de ajuda com um problema.
+      Participar de reuniões de produto para determinar funcionalidades viáveis e estimar prazos.
+      Projetos criados e suas tecnologias:
+      
+      Catálogo Livar: Construído com Next.js, utilizando SEO, princípios SOLID na construção de componentes, HTML5 semântico, Material UI e GraphQL.
+      Livia: Desenvolvido em React com TypeScript, aderindo aos princípios SOLID na construção de componentes, Material UI e GraphQL.
+      Backoffice: Sistema construído com React (JavaScript), seguindo princípios SOLID na construção de componentes, Material UI e GraphQL.
+      LivarUI: Biblioteca de componentes da empresa.`,
     },
   },
   {
